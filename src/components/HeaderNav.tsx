@@ -35,29 +35,29 @@ export default function HeaderNav() {
   ];
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <nav className=" border-b border-gray-100 sticky top-0 z-50 bg-gradient-to-r from-[#26005A] via-[#0047BB] to-[#93328E]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-center overflow-x-auto no-scrollbar">
-          <div className="flex items-center gap-2 md:gap-4 py-4">
+          <div className="flex items-center gap-2 md:gap-4 py-8">
             {navItems.map((item, index) => (
               <NavLink
                 key={index}
                 to={item.path}
                 className={({ isActive }) =>
-                  `flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 whitespace-nowrap border
+                  ` flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 whitespace-nowrap border
                   ${
                     isActive
-                      ? "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-100"
-                      : "bg-white text-gray-600 border-gray-200 hover:border-blue-300 hover:text-blue-600"
+                      ? "bg-[#93328E] text-white border-[#93328E]"
+                      : "bg-white text-[#93328E] border-[#93328E] hover:border-blue-300 hover:[#93328E]"
                   }`
                 }
               >
                 {({ isActive }) => (
                   <>
-                    <span className={`${isActive ? "text-white" : "text-blue-600"}`}>
+                    <span className={`${isActive ? "text-white" : "text-[#93328E]"}`}>
                       {item.icon}
                     </span>
-                    <span className="font-bold text-sm tracking-tight">
+                    <span className="font-bold text-md">
                       {item.title}
                     </span>
                   </>

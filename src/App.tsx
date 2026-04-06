@@ -34,23 +34,49 @@ function App() {
 
         <Route
           path="/access-management"
-          element={<AccessManagement />}
+          element={
+            <main>
+              <HeaderNav/>
+              <AccessManagement />
+            </main>
+        }
         />
         <Route
           path="/incident-management"
-          element={<IncidentManagement />}
+          element={
+          <main>
+              <HeaderNav/>
+              {/* <AccessManagement /> */}
+              <IncidentManagement />
+            </main>
+        }
         />
         <Route
           path="/intake-process"
-          element={<IntakeProcess />}
+          element={
+        <main>
+          <HeaderNav/>
+          <IntakeProcess />
+        </main>
+        }
         />
         <Route
           path="/release-calendar"
-          element={<ReleaseCalendar />}
+          element={
+            <main>
+              <HeaderNav/>
+              <ReleaseCalendar />
+            </main>
+        }
         />
         <Route
           path="/release-tracker"
-          element={<ReleaseTracker />}
+          element={
+            <main>
+              <HeaderNav/>
+              <ReleaseTracker />
+            </main>
+        }
         />
       </Routes>
     </>
