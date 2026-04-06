@@ -1,4 +1,4 @@
-import { CheckCircle, Database, TrendingUp, ShieldCheck, Zap, Globe, Layers, Users, Cpu } from "lucide-react";
+import {  Database, TrendingUp, ShieldCheck, Zap, Globe, Layers, Users, Cpu } from "lucide-react";
 // import { motion } from "motion/react";
 import { motion } from "framer-motion";
 
